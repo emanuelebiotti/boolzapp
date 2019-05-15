@@ -26,7 +26,9 @@ $('textarea').keypress(function(event){
       // imposto una funzione "rispondi" che dopo un secondo mi dà un alert di risposta
       setTimeout(rispondi, 1000);
       function rispondi() {
-        alert('ciao a te');
+        risposta = $('.message_container.template .message').clone();
+        risposta.html('<p> ciao a te </p>').addClass('yours');
+        $('.chat').append(risposta);
       }
     }  else {
       alert('testo vuoto!');
