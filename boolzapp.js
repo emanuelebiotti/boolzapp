@@ -51,11 +51,11 @@ $('input').keypress(function(event){
   if(event.which == 13) {
     var nome_ricerca = $('input').val();
     if (nome_ricerca.length > 0){
-      $('.contactname h4').each(function(){
-        if($(this).text().toLowerCase() === nome_ricerca.toLowerCase()) {
-          alert('trovato!');
+      $('.contact .contactname h4').each(function(){
+        if($(this).text().toLowerCase() != nome_ricerca.toLowerCase()) {
+          $(this).parent().parent().parent().hide();
         }
-      })
+      });
     }
   }
 });
