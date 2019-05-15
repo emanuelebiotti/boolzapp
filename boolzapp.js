@@ -37,7 +37,7 @@ $('.audio').click(function(){
     if (nuovo_messaggio.length > 0) {
     // vado a clonare il template dei messaggi
       var new_message = $('.message_container.template .message').clone();
-      // aggiungo al contenuto del div il testo digitato dall'utente, e gli aggiungo la classe mine
+      // aggiungo al contenuto del div il testo digitato dall'utente, e gli aggiungo la classe yours
       new_message.html(nuovo_messaggio).addClass('yours');
       // aggiungi tutto il div con dentro il testo inserito dall'utente
       $('.chat').append(new_message);
