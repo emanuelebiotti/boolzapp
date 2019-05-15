@@ -105,12 +105,9 @@ body {
 }
 .message.mine {
   background-color: #DCF8C6;
-}
-.message.yours {
   position: relative;
   left:450px;
 }
-
 .message_container.template {
   display:none;
 }
