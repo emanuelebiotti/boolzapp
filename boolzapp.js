@@ -23,6 +23,7 @@ $('textarea').keypress(function(event){
       new_message.html(nuovo_messaggio).addClass('mine');
       // aggiungi tutto il div con dentro il testo inserito dall'utente
       $('.chat').append(new_message);
+      $('textarea').val('');
       // imposto una funzione "rispondi" che dopo un secondo mi dà un alert di risposta
       setTimeout(rispondi, 1000);
       function rispondi() {
