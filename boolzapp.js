@@ -37,6 +37,15 @@ $('textarea').keypress(function(event){
   }
 });
 
+$('.ricerca').click(function(){
+
+  var nome_ricerca = $('input').val();
+  $('.contactname h4').each(function(){
+    if($(this).text() === nome_ricerca) {
+      alert('trovato!');
+    }
+  })
+});
 
 
 // ora voglio che esca il testo di risposta dell'altro utente quando si preme sul microfono:
