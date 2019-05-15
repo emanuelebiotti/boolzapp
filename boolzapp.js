@@ -23,11 +23,18 @@ $('textarea').keypress(function(event){
       new_message.html(nuovo_messaggio).addClass('mine');
       // aggiungi tutto il div con dentro il testo inserito dall'utente
       $('.chat').append(new_message);
+      // imposto una funzione "rispondi" che dopo un secondo mi dà un alert di risposta
+      setTimeout(rispondi, 1000);
+      function rispondi() {
+        alert('ciao a te');
+      }
     }  else {
       alert('testo vuoto!');
     }
   }
 });
+
+
 
 // ora voglio che esca il testo di risposta dell'altro utente quando si preme sul microfono:
 
