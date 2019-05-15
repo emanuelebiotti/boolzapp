@@ -52,7 +52,9 @@ $('input').keypress(function(event){
     var nome_ricerca = $('input').val();
     if (nome_ricerca.length > 0){
       $('.contact .contactname h4').each(function(){
-        if($(this).text().toLowerCase() != nome_ricerca.toLowerCase()) {
+        if($(this).text().toLowerCase().includes(nome_ricerca.toLowerCase())) {
+          $(this).parent().parent().parent().show();
+        } else {
           $(this).parent().parent().parent().hide();
         }
       });
