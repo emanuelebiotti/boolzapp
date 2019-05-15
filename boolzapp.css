@@ -110,3 +110,7 @@ body {
   position: relative;
   left:450px;
 }
+
+.message_container.template {
+  display:none;
+}
