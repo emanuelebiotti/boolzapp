@@ -37,27 +37,40 @@ $('textarea').keypress(function(event){
   }
 });
 
-$('.ricerca').click(function(){
+// $('.ricerca').click(function(){
+//
+//   var nome_ricerca = $('input').val();
+//   $('.contactname h4').each(function(){
+//     if($(this).text() === nome_ricerca) {
+//       alert('trovato!');
+//     }
+//   })
+// });
 
-  var nome_ricerca = $('input').val();
-  $('.contactname h4').each(function(){
-    if($(this).text() === nome_ricerca) {
-      alert('trovato!');
-    }
-  })
-});
+// $('input').keyup(function(){
+//     var nome_ricerca = $('input').val();
+//     if (nome_ricerca.length > 0){
+//       $('.contact .contactname h4').each(function(){
+//         if($(this).text().toLowerCase().includes(nome_ricerca.toLowerCase())) {
+//           $(this).parent().parent().parent().show();
+//         } else {
+//           $(this).parent().parent().parent().hide();
+//         }
+//       });
+//     }
+// });
 
-$('input').keyup(function(){
-    var nome_ricerca = $('input').val();
-    if (nome_ricerca.length > 0){
-      $('.contact .contactname h4').each(function(){
-        if($(this).text().toLowerCase().includes(nome_ricerca.toLowerCase())) {
-          $(this).parent().parent().parent().show();
-        } else {
-          $(this).parent().parent().parent().hide();
-        }
-      });
+
+$('input').keyup(function(event){
+  var contact_search = $(this).val().toLowerCase();
+  $('.contact').each(function(){
+    var name = $(this).find('h4').text().toLowerCase();
+    if(name.includes(contact_search)) {
+      $(this).show();
+    } else {
+      $(this).hide();
     }
+  });
 });
 
 // ora voglio che esca il testo di risposta dell'altro utente quando si preme sul microfono:
