@@ -13,7 +13,7 @@ body {
 }
 .topbar {
   width:100%;
-  height:12%;
+  height:10%;
   background: #EEEEEE;
 }
 .topbar_left, .topbar_right {
@@ -23,10 +23,36 @@ body {
   width:30%;
   float: left;
   border-right:1px solid lightgrey;
+  display: flex;
+  justify-content:space-between;
+}
+.topbar_left_options {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color:grey;
+}
+.topbar_left_options i:hover, .topbar_right_options i:hover, .profile_pic img:hover {
+  cursor:pointer;
 }
 .topbar_right {
-    width:70%;
-    float: right;
+  width:70%;
+  float: right;
+  display: flex;
+}
+.chat_info {
+  width:85%;
+  height: 100%;
+}
+.topbar_right_options {
+  width:15%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color:grey;
 }
 .profile_pic {
   width:25%;
@@ -69,7 +95,7 @@ body {
 }
 .contacts {
   width:30%;
-  height:88%;
+  height:90%;
   float:left;
   background-color: white;
   overflow: auto;
@@ -79,6 +105,9 @@ body {
   height:100px;
   display: flex;
   font-family: sans-serif;
+}
+.contact:hover {
+  background-color: #EEEEEE;
 }
 .contactpic {
   width:25%;
@@ -98,9 +127,9 @@ body {
   justify-content: center;
 }
 .contactname {
-    width:100%;
-    height:30%;
-    position: relative;
+  width:100%;
+  height:30%;
+  position: relative;
 }
 .contactname h4 {
   position: absolute;
@@ -132,7 +161,7 @@ hr.separatore {
 }
 .messages {
   width:70%;
-  height:88%;
+  height:90%;
   float:right;
 }
 .chat {
