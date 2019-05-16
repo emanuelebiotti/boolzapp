@@ -65,6 +65,23 @@ $('input').keyup(function(event){
   });
 });
 
+
+// Milestone 3
+// - Click sul contatto mostra la conversazione del contatto cliccato, è possibile inserire nuovi messaggi per ogni conversazione
+// - Cancella messaggio: cliccando sul messaggio appare un menu a tendina che permette di cancellare il messaggio selezionato
+
+
+
+
+
+
+
+
+
+
+
+
+
 // codice potenzialmente utile per eventuali altre sezioni
 
 // $('.audio').click(function(){
