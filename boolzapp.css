@@ -107,6 +107,7 @@ body {
 .contact_text p {
   margin-left: 20px;
   color:grey;
+  max-width: 220px;
   /* padding-bottom: 25px;
   border-bottom: 1px solid grey;
   border-color: lightgrey; */
