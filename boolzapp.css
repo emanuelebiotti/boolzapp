@@ -236,3 +236,9 @@ hr.separatore {
 .message_container.template {
   display:none;
 }
+.chat {
+  display:none;
+}
+.active {
+  display:block;
+}

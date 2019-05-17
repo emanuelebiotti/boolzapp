@@ -70,14 +70,17 @@ $('input').keyup(function(event){
 // - Click sul contatto mostra la conversazione del contatto cliccato, è possibile inserire nuovi messaggi per ogni conversazione
 // - Cancella messaggio: cliccando sul messaggio appare un menu a tendina che permette di cancellare il messaggio selezionato
 
-
-
-
-
-
-
-
-
+// Imposto la funzione click sul contatto
+$('.contact').click(function(){
+  // creo una variabile contenente il contatto cliccato associato a un data
+  var contattocorrente = $(this).data('contatto');
+  // rimuovo la classe active a tutte le conversazioni
+  $('.chat').removeClass('active');
+  // e contemporaneamente faccio apparire solo la conversazione associata al contatto cliccato
+  $('.chat[data-conversazione="'+contattocorrente+'"]').addClass('active');
+  // aggiungo uno sfondo particolare al contatto cliccato
+  $(this).css('backgroundColor','#EEEEEE');
+});
 
 
 
