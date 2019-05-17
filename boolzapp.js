@@ -14,7 +14,8 @@ $('textarea').keypress(function(event){
       // aggiungo tutto il div con dentro il testo inserito dall'utente
       $('.chat.active').append(new_message);
       // faccio scroll fino alla fine del nuovo messaggio inserito
-
+      var pixel_scroll = $('.chat.active')[0].scrollHeight;
+      $('.chat.active').scrollTop(pixel_scroll);
       // svuoto  la textarea una volta che il messaggio è stato inviato
       $('textarea').val('');
       // imposto una funzione "rispondi" che dopo un secondo mi dà un alert di risposta
@@ -23,6 +24,9 @@ $('textarea').keypress(function(event){
         risposta = $('.message_container.template .message').clone();
         risposta.html('<p> ciao a te </p>').addClass('yours');
         $('.chat.active').append(risposta);
+        // faccio scroll fino alla fine del nuovo messaggio inserito
+        var pixel_scroll = $('.chat.active')[0].scrollHeight;
+        $('.chat.active').scrollTop(pixel_scroll);
       }
     }  else {
       alert('testo vuoto!');
