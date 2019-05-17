@@ -78,11 +78,12 @@ $('.contact').click(function(){
   $('.chat').removeClass('active');
   // e contemporaneamente faccio apparire solo la conversazione associata al contatto cliccato
   $('.chat[data-conversazione="'+contattocorrente+'"]').addClass('active');
-  // aggiungo uno sfondo particolare al contatto cliccato
+  // devo aggiungere uno sfondo particolare al contatto cliccato:
+  // quindi prima metto un sfondo bianco a tutti gli altri
+  $('.contact').css('backgroundColor','white');
+  // e poi metto uno sfondo grigio al contatto cliccato
   $(this).css('backgroundColor','#EEEEEE');
 });
-
-
 
 
 // codice potenzialmente utile per eventuali altre sezioni

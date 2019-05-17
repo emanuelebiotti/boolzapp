@@ -46,6 +46,35 @@ body {
   width:85%;
   height: 100%;
 }
+.current_contact {
+  width:50%;
+  height:100%;
+  border:1px solid black;
+  display:flex;
+}
+.current_contact_img_container {
+  width:25%;
+  height:100%;
+  border:1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.current_contact_img_container img {
+  width:70%;
+  height:80%;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+.current_contact_name {
+  display:flex;
+}
+.current_contact_name h4 {
+  position:relative;
+  top:15px;
+  left:15px;
+  font-family: sans-serif;
+}
 .topbar_right_options {
   width:15%;
   height:100%;
