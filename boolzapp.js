@@ -12,7 +12,9 @@ $('textarea').keypress(function(event){
       // aggiungo al contenuto del div il testo digitato dall'utente, e gli aggiungo la classe mine
       new_message.html(nuovo_messaggio).addClass('mine');
       // aggiungo tutto il div con dentro il testo inserito dall'utente
-      $('.chat').append(new_message);
+      $('.chat.active').append(new_message);
+      // faccio scroll fino alla fine del nuovo messaggio inserito
+
       // svuoto  la textarea una volta che il messaggio è stato inviato
       $('textarea').val('');
       // imposto una funzione "rispondi" che dopo un secondo mi dà un alert di risposta
@@ -20,7 +22,7 @@ $('textarea').keypress(function(event){
       function rispondi() {
         risposta = $('.message_container.template .message').clone();
         risposta.html('<p> ciao a te </p>').addClass('yours');
-        $('.chat').append(risposta);
+        $('.chat.active').append(risposta);
       }
     }  else {
       alert('testo vuoto!');
