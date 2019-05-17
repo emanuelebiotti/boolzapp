@@ -76,6 +76,10 @@ $('.contact').click(function(){
   var nome_contatto = $(this).find('.contactname h4').text();
   // porto il nome del contatto cliccato nello spazio in alto, quello del contatto corrente
   $('.current_contact_name h4').text(nome_contatto);
+  // recupero l'immagine del contatto cliccato
+  var immagine_contatto = $(this).find('.contactpic').children('img').attr('src');
+  // porto l'immagine del contatto cliccato nello spazio dell'immagine in alto, quella del contatto corrente
+  $('.current_contact_img_container').children('img').attr('src', immagine_contatto);
   // creo una variabile contenente il contatto cliccato associato a un data
   var contattocorrente = $(this).data('contatto');
   // rimuovo la classe active a tutte le conversazioni
@@ -87,7 +91,6 @@ $('.contact').click(function(){
   $('.contact').css('backgroundColor','white');
   // e poi metto uno sfondo grigio al contatto cliccato
   $(this).css('backgroundColor','#EEEEEE');
-
 });
 
 

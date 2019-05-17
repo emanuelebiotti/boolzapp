@@ -49,13 +49,11 @@ body {
 .current_contact {
   width:50%;
   height:100%;
-  border:1px solid black;
   display:flex;
 }
 .current_contact_img_container {
   width:25%;
   height:100%;
-  border:1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +61,6 @@ body {
 .current_contact_img_container img {
   width:70%;
   height:80%;
-  border: 1px solid black;
   border-radius: 100%;
 }
 .current_contact_name {
