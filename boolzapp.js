@@ -72,6 +72,10 @@ $('input').keyup(function(event){
 
 // Imposto la funzione click sul contatto
 $('.contact').click(function(){
+  // recupero il nome del contatto cliccato
+  var nome_contatto = $(this).find('.contactname h4').text();
+  // porto il nome del contatto cliccato nello spazio in alto, quello del contatto corrente
+  $('.current_contact_name h4').text(nome_contatto);
   // creo una variabile contenente il contatto cliccato associato a un data
   var contattocorrente = $(this).data('contatto');
   // rimuovo la classe active a tutte le conversazioni
@@ -83,6 +87,7 @@ $('.contact').click(function(){
   $('.contact').css('backgroundColor','white');
   // e poi metto uno sfondo grigio al contatto cliccato
   $(this).css('backgroundColor','#EEEEEE');
+
 });
 
 
