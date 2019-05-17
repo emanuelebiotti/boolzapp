@@ -255,11 +255,17 @@ hr.separatore {
   position: relative;
   left:90px;
   top:10px;
+  font-family: sans-serif;
+  display:flex;
+  justify-content: space-between;
 }
 .message.mine {
   background-color: #DCF8C6;
   position: relative;
   left:450px;
+}
+.message i {
+  color:lightgrey;
 }
 .message_container.template {
   display:none;

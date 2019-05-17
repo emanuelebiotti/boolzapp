@@ -108,6 +108,11 @@ $('.contact').click(function(){
   scroll_message();
 });
 
+$('.profile_pic').children('img').click(function(){
+  alert('Avengers, assemble!!!');
+});
+
+
 
 // codice potenzialmente utile per eventuali altre sezioni
 
