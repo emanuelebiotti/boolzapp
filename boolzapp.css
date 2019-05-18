@@ -247,7 +247,7 @@ hr.separatore {
 }
 .message {
   width:350px;
-  height:auto;
+  height:40px;
   background-color: white;
   padding:10px;
   border-radius: 5px;
@@ -258,6 +258,21 @@ hr.separatore {
   font-family: sans-serif;
   display:flex;
   justify-content: space-between;
+}
+.message_options_panel {
+  width:170px;
+  height:80px;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:space-around;
+  border-radius: 5px;
+  position: relative;
+  left:10px;
+  top:30px;
+  padding:10px;
+  display:none;
 }
 .message.mine {
   background-color: #DCF8C6;

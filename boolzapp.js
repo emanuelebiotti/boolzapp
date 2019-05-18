@@ -41,6 +41,13 @@ function scroll_message() {
   $('.chat.active').scrollTop(pixel_scroll);
 }
 
+
+$('.drop').click(function(){
+  $(this).siblings('.message_options_panel').toggleClass('active');
+});
+
+
+
 // soluzione alternativa: il testo di risposta dell'altro utente esce quando si preme sul microfono:
 
 // $('.audio').click(function(){
