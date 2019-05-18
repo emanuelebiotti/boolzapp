@@ -41,7 +41,7 @@ function scroll_message() {
   $('.chat.active').scrollTop(pixel_scroll);
 }
 
-
+// Faccio apparire il menu a tendina di opzioni al click della chevron
 $('.drop').click(function(){
   $(this).siblings('.message_options_panel').toggleClass('active');
 });
@@ -117,6 +117,7 @@ $('.contact').click(function(){
   scroll_message();
 });
 
+// Cosetta divertente
 $('.profile_pic').children('img').click(function(){
   alert('Avengers, assemble!!!');
 });
