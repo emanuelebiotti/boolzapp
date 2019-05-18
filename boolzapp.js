@@ -100,6 +100,8 @@ $('.contact').click(function(){
   var immagine_contatto = $(this).find('.contactpic').children('img').attr('src');
   // porto l'immagine del contatto cliccato nello spazio dell'immagine in alto, quella del contatto corrente
   $('.current_contact_img_container').children('img').attr('src', immagine_contatto);
+  // mostro la scritta dell'ora ultimo accesso
+  $('.current_contact_name').children('small').css('display', 'block');
   // creo una variabile contenente il contatto cliccato associato a un data
   var contattocorrente = $(this).data('contatto');
   // rimuovo la classe active a tutte le conversazioni
