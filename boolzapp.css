@@ -256,8 +256,11 @@ hr.separatore {
   left:90px;
   top:10px;
   font-family: sans-serif;
-  display:flex;
+  /* display:flex; */
   justify-content: space-between;
+}
+.testomessaggio {
+  width:280px;
 }
 .message_options_panel {
   width:170px;
@@ -269,8 +272,8 @@ hr.separatore {
   justify-content:space-around;
   border-radius: 5px;
   position: relative;
-  left:10px;
-  top:30px;
+  left:170px;
+  bottom:5px;
   padding:10px;
   display:none;
 }
@@ -281,6 +284,9 @@ hr.separatore {
 }
 .message i {
   color:lightgrey;
+  position: relative;
+  left:300px;
+  bottom:15px;
 }
 .message_container.template {
   display:none;
