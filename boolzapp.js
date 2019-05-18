@@ -119,6 +119,10 @@ $('.profile_pic').children('img').click(function(){
   alert('Avengers, assemble!!!');
 });
 
+//Quando si clicca su "cancella messaggio" il messaggio viene cancellato
+$('.message_options_panel .delete_message').click(function(){
+  $(this).closest('.message').hide();
+});
 
 
 // codice potenzialmente utile per eventuali altre sezioni

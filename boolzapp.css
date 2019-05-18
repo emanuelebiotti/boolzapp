@@ -6,6 +6,13 @@
 body {
   background-color: #409286;
 }
+.megacontainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .container {
   width:90%;
   height:700px;
@@ -276,6 +283,9 @@ hr.separatore {
   bottom:5px;
   padding:10px;
   display:none;
+}
+.message_options_panel .message_info:hover, .message_options_panel .delete_message:hover {
+  cursor: pointer;
 }
 .message.mine {
   background-color: #DCF8C6;
