@@ -329,6 +329,18 @@ hr.separatore {
 }
 .message_container.template {
   display:none;
+  width:350px;
+  height:40px;
+  background-color: white;
+  padding:10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
+  left:90px;
+  top:10px;
+  font-family: sans-serif;
+  /* display:flex; */
+  justify-content: space-between;
 }
 .chat {
   display:none;

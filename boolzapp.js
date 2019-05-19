@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
 // INVIO DI UN MESSAGGIO NELLA CHAT
 // Imposto una funzione che fa qualcosa quando premo un tasto nella barra in basso a destra
 $('textarea').keypress(function(event){
@@ -127,6 +128,42 @@ $('.message_options_panel .delete_message').click(function(){
   $(this).closest('.message').hide();
 });
 
+// creo una funzione per generare l'orario con ora e minuti
+function timeGen() {
+  var adesso = new Date();
+  var hour = adesso.getHours();
+  var minute = adesso.getMinutes();
+
+  if (hour < 10) {
+    hour = "0" + hour;
+  }
+  if (minute <10) {
+    minute = "0" + minute;
+  }
+
+  var orario = hour + ":" + minute;
+  return orario;
+}
+
+//aggiungo l'orario dopo "ultimo accesso alle"
+$('.current_contact_name small .ultimo_accesso').text(timeGen());
+
+// var messaggio_1 = {
+//   'testo': 'Ciao sono Tony',
+//   'direction': 'received'
+// };
+//
+// var messaggio_2 = {
+//   'testo': 'Ciao sono Steve',
+//   'direction': 'received'
+// };
+//
+// var conversazione_1 = [messaggio_1, messaggio_2];
+// var conversazione_2 = [messaggio_1, messaggio_2];
+//
+// console.log(conversazione);
+//
+// var conversazioni = [conversazione_1, conversazione_2];
 
 // codice potenzialmente utile per eventuali altre sezioni
 
